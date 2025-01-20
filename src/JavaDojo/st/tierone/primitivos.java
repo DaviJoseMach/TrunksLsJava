@@ -14,8 +14,14 @@ public class primitivos {
         boolean rich = false;
         char gen = 'M';
 
+        //string is not primitv
+        String name = "Alexys";
+
         System.out.println("Your age: " + years);
         System.out.println(rich);
+        System.out.println(name);
+
+
 
     }
 }

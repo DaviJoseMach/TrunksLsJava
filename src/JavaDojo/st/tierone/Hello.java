@@ -8,9 +8,3 @@ public class Hello {
     }
 }
 
-// coment em linha
-
-/*
-wowwowow
-varias linhas feras
- */
