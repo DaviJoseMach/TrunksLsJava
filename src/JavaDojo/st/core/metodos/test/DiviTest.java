@@ -2,14 +2,11 @@ package JavaDojo.st.core.metodos.test;
 
 import JavaDojo.st.core.metodos.domains.Calculadora;
 
-public class CalcTest {
+public class DiviTest {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
-        calculadora.somaDoisNumbers();
-        calculadora.subDoisNumber();
 
-        int num1 = 15;
-        calculadora.multiplicador(num1, 15);
+        double resultDivi = calculadora.dividir(3.4, 0);
+        System.out.println(resultDivi);
     }
-
 }
