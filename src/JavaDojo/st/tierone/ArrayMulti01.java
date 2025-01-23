@@ -12,5 +12,12 @@ public class ArrayMulti01 {
         for (int i = 0; i < yInfo.length ; i++) {
             //teste
         }
+
+        for(int[] j : yInfo){
+            for(int num : j){
+                System.out.println(num);
+            }
+        }
+
     }
 }
