@@ -23,6 +23,7 @@ public class Calculadora {
 
         System.out.println("This is in hehers ");
         System.out.println(num1);
-        System.out.println(num2);
+        System.out.println(num2
+        );
     }
 }
