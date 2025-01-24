@@ -10,11 +10,16 @@ public class Gerador {
 
         int numGerado = random.nextInt(10);
 
-        System.out.println("Escolha um numero (0-10)");
-        int escolha = captura.nextInt();
-        boolean certaEscolha = escolha == numGerado;
-        String certaResposta = certaEscolha == true ? "Certa resposta" : "Resposta errada o numéro correto era:" + numGerado;
+        boolean certaEscolha = false;
+        while(certaEscolha == false){
+            System.out.println("Escolha um numero (0-10)");
+            int escolha = captura.nextInt();
+            certaEscolha = escolha == numGerado;
+            String maiorOuMenor = escolha > numGerado ? "maior que o numero certo" : "menor que o numero certo";
+            String certaResposta = certaEscolha == true ? "Certa resposta" : "Resposta errada seu numero é" + maiorOuMenor;
+            System.out.println(certaResposta);
+        }
 
-        System.out.println(certaResposta);
+
     }
 }
