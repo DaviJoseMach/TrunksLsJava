@@ -9,6 +9,8 @@ public class Player {
         this.nome = nome;
     }   public void setIdade(int idade){
         this.idade = idade;
+    } public void setConsole(String console){
+            this.console = console;
     }
 
     public String getNome(){
@@ -16,5 +18,7 @@ public class Player {
     }
     public int getIdade(){
         return this.idade;
+    } public String getConsole(){
+        return this.console;
     }
 }
