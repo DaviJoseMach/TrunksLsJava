@@ -17,15 +17,4 @@ public class Player {
     public int getIdade(){
         return this.idade;
     }
-    public void imprime(){
-        System.out.println(
-                this.nome
-        );   System.out.println(
-                this.console
-        );   System.out.println(
-                this.idade
-        );
-    }
-
-
 }
