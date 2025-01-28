@@ -5,6 +5,12 @@ public class Anime {
     private int epCount;
     private String tipo;
 
+
+    public void init(String nome, int epCount, String tipo){
+        this.nome = nome;
+        this.epCount = epCount;
+        this.tipo = tipo;
+    }
     public void setNome(String nome){
         this.nome = nome;
     }public void setEpCount(int eps){
