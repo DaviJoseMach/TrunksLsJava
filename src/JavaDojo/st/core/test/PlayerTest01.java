@@ -23,8 +23,6 @@ public class PlayerTest01 {
         player2.setIdade(19);
         player2.setIdade(25);
 
-        System.out.println(player.getNome() + " " + player.getConsole() + " " + player.getIdade());
-        System.out.println(player2.getNome() + " " + player2.getConsole() + " "  + player2.getIdade());
-        System.out.println(player3.getNome() + " #" + player3.getNick() + " " + player3.getConsole() + " "  + player3.getIdade());
+        player.imprime();
     }
 }
