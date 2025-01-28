@@ -9,6 +9,6 @@ public class AnimeTest01 {
         anime01.setTipo("HistorinhaBosta");
         anime01.setEpCount(368);
 
-        System.out.println(anime01.getEpCount());
+       anime01.emprimir();
     }
 }

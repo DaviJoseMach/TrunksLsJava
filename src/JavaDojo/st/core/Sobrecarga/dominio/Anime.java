@@ -19,4 +19,10 @@ public class Anime {
     } public String getTipo(){
         return this.tipo;
     }
+
+    public void emprimir(){
+        System.out.println(this.nome);
+        System.out.println(this.epCount);
+        System.out.println(this.tipo);
+    }
 }
