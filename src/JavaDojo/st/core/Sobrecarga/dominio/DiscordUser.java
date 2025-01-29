@@ -11,8 +11,9 @@ public class DiscordUser {
             this.nick = nick;
             this.nome = nome;
             this.discordId = discordId;
+
             boolean checkIdDev = discordId <= 10;
-            String verifyIdDev = checkIdDev == true ? "... acesso de desenvolvedor" : "Bem vindo" + nick;
+            this.verifyIdDev = checkIdDev == true ? "... acesso de desenvolvedor" : "Bem vindo" + nick;
             this.serversIn = serversIn;
     }
     public void welcome(){
