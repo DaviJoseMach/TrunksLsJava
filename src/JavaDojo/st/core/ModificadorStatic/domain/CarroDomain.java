@@ -3,7 +3,7 @@ package JavaDojo.st.core.ModificadorStatic.domain;
 public class CarroDomain {
     private String nome;
     private double velocidadeMaxima;
-    private double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public CarroDomain(String nome, double velocidadeMaxima) {
         this.nome = nome;
