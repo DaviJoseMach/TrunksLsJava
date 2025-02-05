@@ -2,33 +2,19 @@ package JavaDojo.st.core.kenum.domain;
 
 public class Client {
     private String nome;
-    private String tipo;
-    public static final String PESSOA_FISICA = "PESSOA_FISICA";
-    public static final String PESSOA_JURIDICA = "PESSOA_JURIDICA";
+    private TipoClient tipoClient;
+
+    public Client(String nome, TipoClient tipoClient) {
+        this.nome = nome;
+        this.tipoClient = tipoClient;
+    }
 
     @Override
-    public String
-    toString() {
+    public String toString() {
         return "Client{" +
                 "nome='" + nome + '\'' +
-                ", tipo='" + tipo + '\'' +
+                ", tipoClient=" + tipoClient +
                 '}';
-    }
-
-    public Client(String nome, String tipo) {
-        if(!tipo.equals(PESSOA_FISICA) && !tipo.equals(PESSOA_JURIDICA)){
-            return;
-        }
-        this.nome = nome;
-        this.tipo = tipo;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public String getNome() {
@@ -37,5 +23,13 @@ public class Client {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public TipoClient getTipoClient() {
+        return tipoClient;
+    }
+
+    public void setTipoClient(TipoClient tipoClient) {
+        this.tipoClient = tipoClient;
     }
 }
